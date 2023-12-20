@@ -5777,6 +5777,15 @@
     "@sentry/utils" "7.50.0"
     tslib "^1.9.3"
 
+"@sentry-internal/tracing@7.90.0":
+  version "7.90.0"
+  resolved "https://registry.yarnpkg.com/@sentry-internal/tracing/-/tracing-7.90.0.tgz#cd21662dbfa3d90d34e91eabd875a1616717d3d3"
+  integrity sha512-74jEtpdio9aRkiVBcrY1ZJXek0oFMqxDJK6BkJNCA+aUK1z96V9viehANRk3Nbxm01rWjmH1U4e1siuo9FhjuQ==
+  dependencies:
+    "@sentry/core" "7.90.0"
+    "@sentry/types" "7.90.0"
+    "@sentry/utils" "7.90.0"
+
 "@sentry/browser@7.50.0":
   version "7.50.0"
   resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-7.50.0.tgz#16c995c336322c8aec65570f90f50288678004ec"
@@ -5800,17 +5809,6 @@
     progress "^2.0.3"
     proxy-from-env "^1.1.0"
     which "^2.0.2"
-
-"@sentry/core@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-5.30.0.tgz#6b203664f69e75106ee8b5a2fe1d717379b331f3"
-  integrity sha512-TmfrII8w1PQZSZgPpUESqjB+jC6MvZJZdLtE/0hZ+SrnKhW3x5WlYLvTXZpcWePYBku7rl2wn1RZu6uT0qCTeg==
-  dependencies:
-    "@sentry/hub" "5.30.0"
-    "@sentry/minimal" "5.30.0"
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    tslib "^1.9.3"
 
 "@sentry/core@6.19.3":
   version "6.19.3"
@@ -5850,14 +5848,13 @@
     "@sentry/utils" "7.50.0"
     tslib "^1.9.3"
 
-"@sentry/hub@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/hub/-/hub-5.30.0.tgz#2453be9b9cb903404366e198bd30c7ca74cdc100"
-  integrity sha512-2tYrGnzb1gKz2EkMDQcfLrDTvmGcQPuWxLnJKXJvYTQDGLlEvi2tWz1VIHjunmOvJrB5aIQLhm+dcMRwFZDCqQ==
+"@sentry/core@7.90.0":
+  version "7.90.0"
+  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-7.90.0.tgz#dfd8e3e4eec4b140681ddb21a3fea848fcab7a01"
+  integrity sha512-HolpdHjULCwehKPWHR6IPQM0NBjmORhlBU7FtCh/e8TtSkZ9ztPsuofNBomMS1+mdbL+yxOIc9KUYEl0zRfeAQ==
   dependencies:
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    tslib "^1.9.3"
+    "@sentry/types" "7.90.0"
+    "@sentry/utils" "7.90.0"
 
 "@sentry/hub@6.19.3":
   version "6.19.3"
@@ -5887,15 +5884,6 @@
     "@sentry/utils" "7.69.0"
     localforage "^1.8.1"
     tslib "^2.4.1 || ^1.9.3"
-
-"@sentry/minimal@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/minimal/-/minimal-5.30.0.tgz#ce3d3a6a273428e0084adcb800bc12e72d34637b"
-  integrity sha512-BwWb/owZKtkDX+Sc4zCSTNcvZUq7YcH3uAVlmh/gtR9rmUvbzAA3ewLuB3myi4wWRAMEtny6+J/FN/x+2wn9Xw==
-  dependencies:
-    "@sentry/hub" "5.30.0"
-    "@sentry/types" "5.30.0"
-    tslib "^1.9.3"
 
 "@sentry/minimal@6.19.3":
   version "6.19.3"
@@ -5965,20 +5953,16 @@
     lru_map "^0.3.3"
     tslib "^1.9.3"
 
-"@sentry/node@^5.26.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/node/-/node-5.30.0.tgz#4ca479e799b1021285d7fe12ac0858951c11cd48"
-  integrity sha512-Br5oyVBF0fZo6ZS9bxbJZG4ApAjRqAnqFFurMVJJdunNb80brh7a5Qva2kjhm+U6r9NJAB5OmDyPkA1Qnt+QVg==
+"@sentry/node@^7.90.0":
+  version "7.90.0"
+  resolved "https://registry.yarnpkg.com/@sentry/node/-/node-7.90.0.tgz#083bbdc053426d491281bff6f8a238600dd93e99"
+  integrity sha512-VjDI2MCkidoFEzrMa1gqmwYt1sUhYnu+zoFF5P5jgapTVVJ5xc2b7k/lS62U6IsfxHNrIdTtQHsrbCS5+s0GvQ==
   dependencies:
-    "@sentry/core" "5.30.0"
-    "@sentry/hub" "5.30.0"
-    "@sentry/tracing" "5.30.0"
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    cookie "^0.4.1"
+    "@sentry-internal/tracing" "7.90.0"
+    "@sentry/core" "7.90.0"
+    "@sentry/types" "7.90.0"
+    "@sentry/utils" "7.90.0"
     https-proxy-agent "^5.0.0"
-    lru_map "^0.3.3"
-    tslib "^1.9.3"
 
 "@sentry/react@7.50.0":
   version "7.50.0"
@@ -6027,17 +6011,6 @@
     "@types/express" "^4.17.14"
     tslib "^1.9.3"
 
-"@sentry/tracing@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/tracing/-/tracing-5.30.0.tgz#501d21f00c3f3be7f7635d8710da70d9419d4e1f"
-  integrity sha512-dUFowCr0AIMwiLD7Fs314Mdzcug+gBVo/+NCMyDw8tFxJkwWAKl7Qa2OZxLQ0ZHjakcj1hNKfCQJ9rhyfOl4Aw==
-  dependencies:
-    "@sentry/hub" "5.30.0"
-    "@sentry/minimal" "5.30.0"
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    tslib "^1.9.3"
-
 "@sentry/tracing@6.19.3":
   version "6.19.3"
   resolved "https://registry.yarnpkg.com/@sentry/tracing/-/tracing-6.19.3.tgz#dfdbd5019486c899bdf352b1152d5d253544ef70"
@@ -6069,11 +6042,6 @@
     "@sentry/utils" "7.42.0"
     tslib "^1.9.3"
 
-"@sentry/types@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-5.30.0.tgz#19709bbe12a1a0115bc790b8942917da5636f402"
-  integrity sha512-R8xOqlSTZ+htqrfteCWU5Nk0CDN5ApUTvrlvBuiH1DyP6czDZ4ktbZB0hAgBlVcK0U+qpD3ag3Tqqpa5Q67rPw==
-
 "@sentry/types@6.19.3":
   version "6.19.3"
   resolved "https://registry.yarnpkg.com/@sentry/types/-/types-6.19.3.tgz#94b19da68d4d23561efb1014f72968bcea85cd0c"
@@ -6099,13 +6067,10 @@
   resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.69.0.tgz#012b8d90d270a473cc2a5cf58a56870542739292"
   integrity sha512-zPyCox0mzitzU6SIa1KIbNoJAInYDdUpdiA+PoUmMn2hFMH1llGU/cS7f4w/mAsssTlbtlBi72RMnWUCy578bw==
 
-"@sentry/utils@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-5.30.0.tgz#9a5bd7ccff85ccfe7856d493bffa64cabc41e980"
-  integrity sha512-zaYmoH0NWWtvnJjC9/CBseXMtKHm/tm40sz3YfJRxeQjyzRqNQPgivpd9R/oDJCYj999mzdW382p/qi2ypjLww==
-  dependencies:
-    "@sentry/types" "5.30.0"
-    tslib "^1.9.3"
+"@sentry/types@7.90.0":
+  version "7.90.0"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-7.90.0.tgz#72797abd790fc3de546d42600752004a7f7d07d0"
+  integrity sha512-dA0Mtba5jYlcQ6xBsGILZuFq4NGrWLfr2ys036z2JE4H1+3PxOVERlD3Di7p+WKYM5gjFw10Hn3EgUV979E3dA==
 
 "@sentry/utils@6.19.3":
   version "6.19.3"
@@ -6146,6 +6111,13 @@
   dependencies:
     "@sentry/types" "7.69.0"
     tslib "^2.4.1 || ^1.9.3"
+
+"@sentry/utils@7.90.0":
+  version "7.90.0"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-7.90.0.tgz#d4eea6392af7498c7be03205151ad11ea8707915"
+  integrity sha512-6BpqAzONm/HQbdlL4TY2W2vBSmaG/eVvwUaHoz0wB49EkWwpF6j/SO9Kb/XkiA/qp9GoJVXpnGBFQLPx7kv/Yw==
+  dependencies:
+    "@sentry/types" "7.90.0"
 
 "@sentry/webpack-plugin@1.20.0":
   version "1.20.0"
